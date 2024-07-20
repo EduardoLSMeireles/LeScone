@@ -1,8 +1,19 @@
-.grid-3 {
-  width: calc(25% - 20px);
-  margin-left: 10px;
-  margin-right: 10px;
-  background: rgba(0,0,0,0.4);
-  color: white;
-  float: left;
+// .grid-3 {
+//   width: calc(25% - 20px);
+//   margin-left: 10px;
+//   margin-right: 10px;
+//   background: rgba(0,0,0,0.4);
+//   color: white;
+//   float: left;
+// }
+
+@for $i from 1 through $cols {
+  .grid-#{$i} {
+    width: grid($i);
+  }
 }
+
+[class^="grid-"]{
+  @include grid-structure
+}
+
