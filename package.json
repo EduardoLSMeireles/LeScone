@@ -2,16 +2,14 @@
   "name": "lescone",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {},
   "devDependencies": {
-    "@parcel/transformer-sass": "2.12.0",
+    "@parcel/transformer-sass": "^2.12.0",
     "parcel": "^2.12.0"
   }
 }
